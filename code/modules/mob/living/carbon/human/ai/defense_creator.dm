@@ -145,12 +145,6 @@
 	desc = /obj/structure/machinery/defenses/sentry/flamer::desc
 	icon_state = "uscm_flamer"
 	path_to_spawn = /obj/structure/machinery/defenses/sentry/flamer
-/*
-/datum/human_ai_defense/defense/sentry/uscm/flamer/plasma
-	name = "USCM Sentry - Plasma Flamer"
-	desc = /obj/structure/machinery/defenses/sentry/flamer::desc
-	icon_state = "uscm_flamer_plasma"
-	path_to_spawn = /obj/structure/machinery/defenses/sentry/flamer/plasma*/
 
 /datum/human_ai_defense/defense/sentry/uscm/flamer/mini
 	name = "USCM Sentry - Mini Flamer"
@@ -161,7 +155,7 @@
 /datum/human_ai_defense/defense/sentry/upp
 	name = "UPP Sentry"
 	desc = /obj/structure/machinery/defenses/sentry/upp::desc
-	icon_state = "upp_sentry" // maybe switch to upp_sentry_2
+	icon_state = "upp_sentry"
 	path_to_spawn = /obj/structure/machinery/defenses/sentry/upp
 
 /datum/human_ai_defense/defense/sentry/upp/light
