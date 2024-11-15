@@ -64,8 +64,19 @@
 			if(!lazy_defense_dict[gotten_path])
 				lazy_defense_dict[gotten_path] = new gotten_path()
 
+			var/direction = ui.user.dir
+			switch(params["place_dir"])
+				if("North")
+					direction = NORTH
+				if("East")
+					direction = EAST
+				if("South")
+					direction = SOUTH
+				if("West")
+					direction = WEST
+
 			var/datum/human_ai_defense/defense_object = lazy_defense_dict[gotten_path]
-			defense_object.spawn_object(get_turf(ui.user), ui.user.dir, params["faction"], params["turned_on"])
+			defense_object.spawn_object(get_turf(ui.user), direction, params["faction"], params["turned_on"])
 			return TRUE
 
 /client/proc/open_human_defense_creator_panel()

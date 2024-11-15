@@ -38,6 +38,7 @@ export const HumanDefenseManager = (props) => {
   const [chosenDefense, setDefense] = useState<Defense | null>(null);
   const [chosenFaction, setFaction] = useState<string>('USCM');
   const [turnedOn, setTurnedOn] = useState<BooleanLike>(true);
+  const [placeDir, setPlaceDir] = useState<string>('');
   return (
     <Window title="Human Defense Creator" width={800} height={900}>
       <Window.Content>
@@ -119,6 +120,26 @@ export const HumanDefenseManager = (props) => {
                             disabled={!chosenDefense.uses_faction}
                           />
                         </div>
+                        <div
+                          style={{
+                            display: 'inline-block',
+                            verticalAlign: 'middle',
+                          }}
+                        >
+                          <Dropdown
+                            options={[
+                              'Default',
+                              'North',
+                              'East',
+                              'South',
+                              'West',
+                            ]}
+                            selected={placeDir}
+                            onSelected={(value) => setPlaceDir(value)}
+                            width={10}
+                            placeholder="Direction..."
+                          />
+                        </div>
                       </div>
                     </Stack.Item>
                     <Stack.Item>
@@ -130,6 +151,7 @@ export const HumanDefenseManager = (props) => {
                             path: chosenDefense.path,
                             turned_on: turnedOn,
                             faction: chosenFaction,
+                            place_dir: placeDir,
                           })
                         }
                       >
