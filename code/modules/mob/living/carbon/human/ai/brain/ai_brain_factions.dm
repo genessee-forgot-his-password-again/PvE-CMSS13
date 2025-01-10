@@ -89,6 +89,7 @@
 	faction = FACTION_CLF
 	friendly_factions = list(
 		FACTION_COLONIST,
+		FACTION_SURVIVOR
 	)
 	enter_combat_lines = list(
 		"You will never defeat us!",
@@ -300,6 +301,7 @@
 		FACTION_COLONIST,
 		FACTION_TWE,
 		FACTION_MARINE,
+		FACTION_WY_DEATHSQUAD
 	)
 	neutral_factions = list(
 		FACTION_FREELANCER,
@@ -400,11 +402,16 @@
 
 /datum/human_ai_faction/wy/pmc
 	faction = FACTION_PMC
+	friendly_factions = list(
+		FACTION_WY,
+		FACTION_WY_DEATHSQUAD
+	)
 
 /datum/human_ai_faction/wy_deathsquad
 	faction = FACTION_WY_DEATHSQUAD
 	friendly_factions = list(
 		FACTION_WY,
+		FACTION_PMC
 	)
 	enter_combat_lines = list(
 		"Visual confirmed, engaging.",
@@ -502,3 +509,36 @@
 
 /datum/human_ai_faction/xeno_cultist/corrupted
 	faction = FACTION_XENOMORPH_CORRPUTED
+
+/datum/human_ai_faction/freelancer
+	faction = FACTION_FREELANCER
+	neutral_factions = list(
+		FACTION_MARINE,
+		FACTION_COLONIST,
+		FACTION_SURVIVOR,
+		FACTION_CLF
+	)
+
+/datum/human_ai_faction/colonist
+	faction = FACTION_COLONIST
+	friendly_factions = list(
+		FACTION_MARINE,
+		FACTION_SURVIVOR
+	)
+	neutral_factions = list(
+		FACTION_CLF,
+		FACTION_FREELANCER,
+		FACTION_PMC,
+		FACTION_WY,
+		FACTION_TWE,
+		FACTION_CONTRACTOR
+	)
+
+/datum/human_ai_faction/contractor
+	faction = FACTION_CONTRACTOR
+	neutral_factions = list(
+		FACTION_MARINE,
+		FACTION_SURVIVOR,
+		FACTION_COLONIST,
+		FACTION_WY
+	)
