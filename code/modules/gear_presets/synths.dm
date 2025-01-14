@@ -895,22 +895,24 @@
 // new joe stuff
 
 /datum/equipment_preset/synth/working_joe/ungeared
-	name = "Synthetic - Working Joe (Melee)"
+	name = "Synthetic - Working Joe (Seegson)"
 	joe_type = SYNTH_WORKING_JOE
+	faction = FACTION_JOE
 
 /datum/equipment_preset/synth/working_joe/ungeared/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/joe(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/rank/synthetic/joe(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/device/working_joe_pda(new_human.back), WEAR_IN_L_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/weapon/ice_axe/red(new_human), WEAR_L_HAND)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/ice_axe/red(new_human), WEAR_R_HAND)
 
 /datum/equipment_preset/synth/working_joe/ungeared/hazmat
-	name = "Synthetic - Working Joe (Hazard Melee)"
+	name = "Synthetic - Hazard Joe (Seegson)"
 	joe_type = SYNTH_HAZARD_JOE
+	faction = FACTION_JOE
 
 /datum/equipment_preset/synth/working_joe/ungeared/hazmat/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/joe(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/rank/synthetic/joe/engi(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/device/working_joe_pda(new_human.back), WEAR_IN_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/joe(new_human), WEAR_HANDS)
-	new_human.equip_to_slot_or_del(new /obj/item/maintenance_jack(new_human), WEAR_L_HAND)
+	new_human.equip_to_slot_or_del(new /obj/item/maintenance_jack(new_human), WEAR_R_HAND)
