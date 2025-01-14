@@ -905,8 +905,8 @@
 	new_human.equip_to_slot_or_del(new /obj/item/maintenance_jack(new_human), WEAR_L_HAND)
 
 /datum/equipment_preset/synth/working_joe/ungeared/hazmat
-	name = "Synthetic - Working Joe (Hazmat Melee)"
-	joe_type = SYNTH_HAZMAT_JOE
+	name = "Synthetic - Working Joe (Hazard Melee)"
+	joe_type = SYNTH_HAZARD_JOE
 
 /datum/equipment_preset/synth/working_joe/ungeared/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/joe(new_human), WEAR_FEET)
