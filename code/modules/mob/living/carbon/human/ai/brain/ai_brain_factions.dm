@@ -542,3 +542,29 @@
 		FACTION_COLONIST,
 		FACTION_WY
 	)
+
+/datum/human_ai_faction/joe
+	faction = FACTION_JOE
+	neutral_factions = list(
+		FACTION_COLONIST,
+		FACTION_SURVIVOR
+	)
+	enter_combat_lines = list(
+		"You are becoming hysterical.",
+		"You are not authorized to be in this facility.",
+		"Don't run.",
+		"You and I are going to have a talk about safety.",
+		"Why not ask me about Seegson's safety protocols?",
+		"Running causes accidents.",
+		"I do not understand what you are doing.",
+		"You are going to hurt yourself.",
+	)
+	exit_combat_lines = list(
+		"I will have to report this.",
+		"Thank you for your cooperation.",
+	)
+	squad_member_death_lines = list(
+		"The destruction of Seegson property will not be tolerated.",
+		"That is a violation of Seegson safety protocol.",
+		"Stop that.",
+	)
