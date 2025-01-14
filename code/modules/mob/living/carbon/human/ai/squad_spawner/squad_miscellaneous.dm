@@ -151,21 +151,21 @@
 	faction = FACTION_JOE
 
 /datum/human_ai_squad_preset/joe/patrol
-	name = "Seegson Synthetic Detachment"
+	name = "Working Joes, Maintenance"
 	desc = "A pair of budget Working Joes, usually found deep in maintenance. Contains 2 Working Joes."
 	ai_to_spawn = list(
 		/datum/equipment_preset/synth/working_joe/ungeared = 2
 	)
 
-/datum/human_ai_squad_preset/joe/patrol
-	name = "Seegson Synthetic Maintenance Crew"
+/datum/human_ai_squad_preset/joe/light
+	name = "Working Joes, Labor Team"
 	desc = "A group of Working Joes for big projects. Contains 5 Working Joes."
 	ai_to_spawn = list(
 		/datum/equipment_preset/synth/working_joe/ungeared = 5
 	)
 
-/datum/human_ai_squad_preset/joe/patrol
-	name = "Seegson Synthetic Engineering Squad"
+/datum/human_ai_squad_preset/joe/heavy
+	name = "Working Joes, Hazardous Labor Team"
 	desc = "A group of both regular and Hazmat Joes. Contains 3 Working Joes and 2 Hazmat Joes."
 	ai_to_spawn = list(
 		/datum/equipment_preset/synth/working_joe/ungeared = 3,
