@@ -891,3 +891,26 @@
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/chloroform(new_human), WEAR_IN_L_STORE)
 
 //*****************************************************************************************************/
+
+// new joe stuff
+
+/datum/equipment_preset/synth/working_joe/ungeared
+	name = "Synthetic - Working Joe (Melee)"
+	joe_type = SYNTH_WORKING_JOE
+
+/datum/equipment_preset/synth/working_joe/ungeared/load_gear(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/joe(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/rank/synthetic/joe(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/device/working_joe_pda(new_human.back), WEAR_IN_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/maintenance_jack(new_human), WEAR_L_HAND)
+
+/datum/equipment_preset/synth/working_joe/ungeared/hazmat
+	name = "Synthetic - Working Joe (Hazmat Melee)"
+	joe_type = SYNTH_HAZMAT_JOE
+
+/datum/equipment_preset/synth/working_joe/ungeared/load_gear(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/joe(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/rank/synthetic/joe/engi(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/device/working_joe_pda(new_human.back), WEAR_IN_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/joe(new_human), WEAR_HANDS)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/sledgehammer(new_human), WEAR_L_HAND)
