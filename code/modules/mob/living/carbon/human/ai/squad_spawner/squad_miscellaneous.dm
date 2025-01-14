@@ -146,3 +146,28 @@
 		/datum/equipment_preset/pmc/w_y_whiteout/terminator = 2,
 		/datum/equipment_preset/pmc/w_y_whiteout/leader = 1
 	)
+
+/datum/human_ai_squad_preset/joe
+	faction = FACTION_JOE
+
+/datum/human_ai_squad_preset/joe/patrol
+	name = "Seegson Synthetic Detachment"
+	desc = "A pair of budget Working Joes, usually found deep in maintenance. Contains 2 Working Joes."
+	ai_to_spawn = list(
+		/datum/equipment_preset/synth/working_joe/ungeared = 2
+	)
+
+/datum/human_ai_squad_preset/joe/patrol
+	name = "Seegson Synthetic Maintenance Crew"
+	desc = "A group of Working Joes for big projects. Contains 5 Working Joes."
+	ai_to_spawn = list(
+		/datum/equipment_preset/synth/working_joe/ungeared = 5
+	)
+
+/datum/human_ai_squad_preset/joe/patrol
+	name = "Seegson Synthetic Engineering Squad"
+	desc = "A group of both regular and Hazmat Joes. Contains 3 Working Joes and 2 Hazmat Joes."
+	ai_to_spawn = list(
+		/datum/equipment_preset/synth/working_joe/ungeared = 3,
+		/datum/equipment_preset/synth/working_joe/ungeared/hazmat = 2
+	)
